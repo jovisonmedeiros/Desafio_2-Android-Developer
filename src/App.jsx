@@ -87,6 +87,11 @@ function App() {
     setCartItems([]);
     navigate('purchaseSuccess');
   };
+
+  const handleLogout = () => {
+    // Aqui você pode adicionar lógica para limpar dados de sessão
+    navigate('welcome');
+  };
   
   const navigate = (page, data = null) => {
     setCurrentPage(page);
@@ -105,7 +110,7 @@ function App() {
     case 'catalog':
       return <Catalog navigate={navigate} booksData={booksData} />;
     case 'profile':
-      return <Profile navigate={navigate} />;
+      return <Profile navigate={navigate} onLogout={handleLogout} />;
     case 'notifications':
       return <Notifications navigate={navigate} />;
     case 'cadastro':
