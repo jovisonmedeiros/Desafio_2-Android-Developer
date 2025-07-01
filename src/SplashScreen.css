@@ -1,0 +1,1 @@
+.splash-container{display:flex;justify-content:center;align-items:center;height:100vh;background-color:#fff;animation:fadeOut 3s forwards}.splash-logo{animation:popIn 1s ease-out}@keyframes popIn{0%{transform:scale(.5);opacity:0}100%{transform:scale(1);opacity:1}}@keyframes fadeOut{0%{opacity:1}80%{opacity:1}100%{opacity:0}}
